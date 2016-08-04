@@ -18,8 +18,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Assets</string>
 			<key>path</key>
 			<string>Assets</string>
 			<key>sourceTree</key>
@@ -94,8 +92,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CustomViews</string>
 			<key>path</key>
 			<string>CustomViews</string>
 			<key>sourceTree</key>
@@ -129,8 +125,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewModel</string>
 			<key>path</key>
 			<string>ViewModel</string>
 			<key>sourceTree</key>
@@ -206,8 +200,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Two Way Binding</string>
 			<key>path</key>
 			<string>Two Way Binding</string>
 			<key>sourceTree</key>
@@ -221,8 +213,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Basic Controls</string>
 			<key>path</key>
 			<string>Basic Controls</string>
 			<key>sourceTree</key>
@@ -236,8 +226,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Reload DataSource</string>
 			<key>path</key>
 			<string>Reload DataSource</string>
 			<key>sourceTree</key>
@@ -271,8 +259,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Animated DataSource</string>
 			<key>path</key>
 			<string>Animated DataSource</string>
 			<key>sourceTree</key>
@@ -295,6 +281,41 @@
 		<dict>
 			<key>fileRef</key>
 			<string>0DBAFB161D53D11C00D49D70</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0DBAFB191D53E25600D49D70</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0DBAFB1A1D53E27E00D49D70</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Basic Search bar</string>
+			<key>path</key>
+			<string>Basic Search bar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0DBAFB1A1D53E27E00D49D70</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BasicSearchBarViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0DBAFB1B1D53E27E00D49D70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0DBAFB1A1D53E27E00D49D70</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -382,6 +403,7 @@
 			<key>files</key>
 			<array>
 				<string>0DBAFB0D1D53A61900D49D70</string>
+				<string>0DBAFB1B1D53E27E00D49D70</string>
 				<string>0DCFC4E81D5148B9001FD547</string>
 				<string>0DBAFB141D53C79300D49D70</string>
 				<string>0DBAFB091D539F3F00D49D70</string>
@@ -842,8 +864,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View</string>
 			<key>path</key>
 			<string>View</string>
 			<key>sourceTree</key>
@@ -855,14 +875,13 @@
 			<array>
 				<string>0DBAFB151D53D0EC00D49D70</string>
 				<string>0DBAFB0F1D53ADCA00D49D70</string>
+				<string>0DBAFB191D53E25600D49D70</string>
 				<string>0DBAFB101D53C70900D49D70</string>
 				<string>0DBAFB0E1D53ADBD00D49D70</string>
 				<string>0DCFC4E71D5148B9001FD547</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
 			<key>path</key>
 			<string>Controllers</string>
 			<key>sourceTree</key>
