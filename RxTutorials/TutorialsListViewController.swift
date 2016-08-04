@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxDataSources
+import ChameleonFramework
 
 class TutorialsListViewController: UIViewController {
     
@@ -16,9 +20,20 @@ class TutorialsListViewController: UIViewController {
     
     // MARK: - Properties
     
-    var rxTutorials:[String] = ["Basic Operators"]
+    let dataSource = Observable.just(DataSource.values)
+    let disposeBag = DisposeBag()
     
-    // MARK: - Enum
+    // MARK: - Enums
+    
+    enum DataSource:String {
+        
+        case BasicControls = "BasicControlsViewController"
+        case TwoWayBinding = "TwoWayBindingViewController"
+        case SectionedTableViewReload = "SectionedTableViewReload"
+        case SectionedTableViewAnimated = "SectionedTableViewAnimated"
+        
+        static let values :[DataSource]  = [.BasicControls]
+    }
     
     enum CellIdentifier:String {
         case textCellIdentifier = "TutorialList"
@@ -35,34 +50,26 @@ class TutorialsListViewController: UIViewController {
     
     private func setUpView(){
         title = "Rx Examples"
-        setUpTableView()
         self.navigationController?.hidesNavigationBarHairline = true
+        setUpTableView()
+        
     }
     
     private func setUpTableView(){
-        tableView.tableFooterView = UIView()
-    }
-    
-    // MARK: - IBActions
-
-}
-
-extension TutorialsListViewController : UITableViewDelegate,UITableViewDataSource{
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1;
-    }
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1;
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(CellIdentifier.textCellIdentifier.rawValue, forIndexPath: indexPath)
-        cell.textLabel?.text = rxTutorials[indexPath.row]
-        return cell
+        tableView.tableFooterView = UIView()
+        
+        dataSource.bindTo(tableView.rx_itemsWithCellIdentifier(CellIdentifier.textCellIdentifier.rawValue)) { row,element,cell in //bind datasources
+            cell.textLabel?.text = String(element)
+            cell.selectionStyle = .None
+        }.addDisposableTo(disposeBag)
+        
+        tableView.rx_modelSelected(DataSource)
+            .subscribeNext{ [weak self] in
+                let nextVC = self?.storyboard?.instantiateViewControllerWithIdentifier($0.rawValue)
+                self?.navigationController?.pushViewController(nextVC!, animated: true)
+        }.addDisposableTo(disposeBag)
+        
     }
     
-
 }
