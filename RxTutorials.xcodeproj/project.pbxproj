@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1675201D52509C0072EC03 /* BasicControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */; };
+		0DBAFB021D53858900D49D70 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB001D53858900D49D70 /* Button.swift */; };
+		0DBAFB031D53858900D49D70 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB011D53858900D49D70 /* TextView.swift */; };
+		0DBAFB061D539E4400D49D70 /* TwoWayBindingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB051D539E4400D49D70 /* TwoWayBindingViewController.swift */; };
+		0DBAFB091D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB081D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift */; };
+		0DBAFB0C1D53A61900D49D70 /* ContainedTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB0A1D53A61900D49D70 /* ContainedTextViewViewController.swift */; };
+		0DBAFB0D1D53A61900D49D70 /* PresentedTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB0B1D53A61900D49D70 /* PresentedTextViewViewController.swift */; };
+		0DBAFB141D53C79300D49D70 /* ReloadDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */; };
+		0DBAFB171D53D11C00D49D70 /* AnimatedDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB161D53D11C00D49D70 /* AnimatedDataSourceViewController.swift */; };
 		0DCFC4D21D5144E9001FD547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */; };
 		0DCFC4D71D5144E9001FD547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D51D5144E9001FD547 /* Main.storyboard */; };
 		0DCFC4D91D5144E9001FD547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D81D5144E9001FD547 /* Assets.xcassets */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicControlsViewController.swift; sourceTree = "<group>"; };
+		0DBAFB001D53858900D49D70 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		0DBAFB011D53858900D49D70 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		0DBAFB051D539E4400D49D70 /* TwoWayBindingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayBindingViewController.swift; sourceTree = "<group>"; };
+		0DBAFB081D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayBindingViewControllerViewModel.swift; sourceTree = "<group>"; };
+		0DBAFB0A1D53A61900D49D70 /* ContainedTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainedTextViewViewController.swift; sourceTree = "<group>"; };
+		0DBAFB0B1D53A61900D49D70 /* PresentedTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTextViewViewController.swift; sourceTree = "<group>"; };
+		0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadDataSourceViewController.swift; sourceTree = "<group>"; };
+		0DBAFB161D53D11C00D49D70 /* AnimatedDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDataSourceViewController.swift; sourceTree = "<group>"; };
 		0DCFC4CE1D5144E7001FD547 /* RxTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DCFC4D61D5144E9001FD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +58,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D16751E1D52491F0072EC03 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFC4D81D5144E9001FD547 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		0DBAFB041D53859000D49D70 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB001D53858900D49D70 /* Button.swift */,
+				0DBAFB011D53858900D49D70 /* TextView.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		0DBAFB071D539ED700D49D70 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB081D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0DBAFB0E1D53ADBD00D49D70 /* Two Way Binding */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB0A1D53A61900D49D70 /* ContainedTextViewViewController.swift */,
+				0DBAFB0B1D53A61900D49D70 /* PresentedTextViewViewController.swift */,
+				0DBAFB051D539E4400D49D70 /* TwoWayBindingViewController.swift */,
+			);
+			name = "Two Way Binding";
+			sourceTree = "<group>";
+		};
+		0DBAFB0F1D53ADCA00D49D70 /* Basic Controls */ = {
+			isa = PBXGroup;
+			children = (
+				0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */,
+			);
+			name = "Basic Controls";
+			sourceTree = "<group>";
+		};
+		0DBAFB101D53C70900D49D70 /* Reload DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */,
+			);
+			name = "Reload DataSource";
+			sourceTree = "<group>";
+		};
+		0DBAFB151D53D0EC00D49D70 /* Animated DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB161D53D11C00D49D70 /* AnimatedDataSourceViewController.swift */,
+			);
+			name = "Animated DataSource";
+			sourceTree = "<group>";
+		};
 		0DCFC4C51D5144E7001FD547 = {
 			isa = PBXGroup;
 			children = (
@@ -62,8 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */,
-				0DCFC4E51D514853001FD547 /* View */,
+				0D16751E1D52491F0072EC03 /* Assets */,
 				0DCFC4E61D514858001FD547 /* Controllers */,
+				0DCFC4E51D514853001FD547 /* View */,
+				0DBAFB071D539ED700D49D70 /* ViewModel */,
 				0DCFC4DD1D5144E9001FD547 /* Info.plist */,
 			);
 			path = RxTutorials;
@@ -72,8 +151,8 @@
 		0DCFC4E51D514853001FD547 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0DBAFB041D53859000D49D70 /* CustomViews */,
 				0DCFC4D51D5144E9001FD547 /* Main.storyboard */,
-				0DCFC4D81D5144E9001FD547 /* Assets.xcassets */,
 				0DCFC4DA1D5144E9001FD547 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -83,6 +162,10 @@
 			isa = PBXGroup;
 			children = (
 				0DCFC4E71D5148B9001FD547 /* TutorialsListViewController.swift */,
+				0DBAFB151D53D0EC00D49D70 /* Animated DataSource */,
+				0DBAFB0F1D53ADCA00D49D70 /* Basic Controls */,
+				0DBAFB101D53C70900D49D70 /* Reload DataSource */,
+				0DBAFB0E1D53ADBD00D49D70 /* Two Way Binding */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -226,8 +309,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DBAFB0D1D53A61900D49D70 /* PresentedTextViewViewController.swift in Sources */,
 				0DCFC4E81D5148B9001FD547 /* TutorialsListViewController.swift in Sources */,
+				0DBAFB141D53C79300D49D70 /* ReloadDataSourceViewController.swift in Sources */,
+				0DBAFB091D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift in Sources */,
+				0DBAFB171D53D11C00D49D70 /* AnimatedDataSourceViewController.swift in Sources */,
+				0DBAFB061D539E4400D49D70 /* TwoWayBindingViewController.swift in Sources */,
+				0D1675201D52509C0072EC03 /* BasicControlsViewController.swift in Sources */,
+				0DBAFB0C1D53A61900D49D70 /* ContainedTextViewViewController.swift in Sources */,
 				0DCFC4D21D5144E9001FD547 /* AppDelegate.swift in Sources */,
+				0DBAFB021D53858900D49D70 /* Button.swift in Sources */,
+				0DBAFB031D53858900D49D70 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

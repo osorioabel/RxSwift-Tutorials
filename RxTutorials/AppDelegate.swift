@@ -48,7 +48,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().barTintColor = UIColor.flatSkyBlueColor()
+        UINavigationBar.appearance().translucent = false
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        UITableView.appearance().separatorColor = UIColor.flatSkyBlueColor()
+        Button.appearance().tintColor = UIColor.whiteColor()
+        Button.appearance().backgroundColor = UIColor.flatSkyBlueColor()
+        
     
     }
     
