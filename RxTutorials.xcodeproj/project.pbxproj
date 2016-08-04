@@ -14,6 +14,7 @@
 		0DBAFB091D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB081D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift */; };
 		0DBAFB0C1D53A61900D49D70 /* ContainedTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB0A1D53A61900D49D70 /* ContainedTextViewViewController.swift */; };
 		0DBAFB0D1D53A61900D49D70 /* PresentedTextViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB0B1D53A61900D49D70 /* PresentedTextViewViewController.swift */; };
+		0DBAFB141D53C79300D49D70 /* ReloadDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */; };
 		0DCFC4D21D5144E9001FD547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */; };
 		0DCFC4D71D5144E9001FD547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D51D5144E9001FD547 /* Main.storyboard */; };
 		0DCFC4D91D5144E9001FD547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D81D5144E9001FD547 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		0DBAFB081D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoWayBindingViewControllerViewModel.swift; sourceTree = "<group>"; };
 		0DBAFB0A1D53A61900D49D70 /* ContainedTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainedTextViewViewController.swift; sourceTree = "<group>"; };
 		0DBAFB0B1D53A61900D49D70 /* PresentedTextViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedTextViewViewController.swift; sourceTree = "<group>"; };
+		0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadDataSourceViewController.swift; sourceTree = "<group>"; };
 		0DCFC4CE1D5144E7001FD547 /* RxTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DCFC4D61D5144E9001FD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			name = "Basic Controls";
 			sourceTree = "<group>";
 		};
+		0DBAFB101D53C70900D49D70 /* Reload DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */,
+			);
+			name = "Reload DataSource";
+			sourceTree = "<group>";
+		};
 		0DCFC4C51D5144E7001FD547 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 			children = (
 				0DCFC4E71D5148B9001FD547 /* TutorialsListViewController.swift */,
 				0DBAFB0F1D53ADCA00D49D70 /* Basic Controls */,
+				0DBAFB101D53C70900D49D70 /* Reload DataSource */,
 				0DBAFB0E1D53ADBD00D49D70 /* Two Way Binding */,
 			);
 			name = Controllers;
@@ -289,6 +300,7 @@
 			files = (
 				0DBAFB0D1D53A61900D49D70 /* PresentedTextViewViewController.swift in Sources */,
 				0DCFC4E81D5148B9001FD547 /* TutorialsListViewController.swift in Sources */,
+				0DBAFB141D53C79300D49D70 /* ReloadDataSourceViewController.swift in Sources */,
 				0DBAFB091D539F3F00D49D70 /* TwoWayBindingViewControllerViewModel.swift in Sources */,
 				0DBAFB061D539E4400D49D70 /* TwoWayBindingViewController.swift in Sources */,
 				0D1675201D52509C0072EC03 /* BasicControlsViewController.swift in Sources */,

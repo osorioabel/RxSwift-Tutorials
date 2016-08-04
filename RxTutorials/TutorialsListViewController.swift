@@ -32,7 +32,7 @@ class TutorialsListViewController: UIViewController {
         case SectionedTableViewReload = "SectionedTableViewReload"
         case SectionedTableViewAnimated = "SectionedTableViewAnimated"
         
-        static let values :[DataSource]  = [.BasicControls,.TwoWayBinding]
+        static let values :[DataSource]  = [.BasicControls,.TwoWayBinding,.SectionedTableViewReload,.SectionedTableViewAnimated]
     }
     
     enum CellIdentifier:String {
