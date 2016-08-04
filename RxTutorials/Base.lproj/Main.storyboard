@@ -93,7 +93,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-fJ-2hm">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-fJ-2hm">
                                 <rect key="frame" x="20" y="72" width="560" height="686"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jNa-ER-TK0">
@@ -244,7 +244,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Basic Controls" id="EQy-fU-UxB">
-                        <barButtonItem key="rightBarButtonItem" title="r" id="bHl-Lf-WNY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Reset" style="plain" id="bHl-Lf-WNY"/>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="p5U-qW-hmV" id="8lg-hh-NKg"/>
@@ -281,7 +281,7 @@
         <!--Navigation Controller-->
         <scene sceneID="P0N-nG-bvU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mq3-5y-gEU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="BasicControllerNC" automaticallyAdjustsScrollViewInsets="NO" id="mq3-5y-gEU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iB5-cU-O0D">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

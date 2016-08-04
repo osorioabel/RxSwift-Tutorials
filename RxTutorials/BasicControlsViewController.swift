@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class BasicControlsViewController: UIViewController {
-
+    
     // MARK: - IBOutlets
     @IBOutlet weak var resetBarButtonItem: UIBarButtonItem!
     @IBOutlet weak var tapGestureRecognizer: UITapGestureRecognizer!
@@ -58,11 +58,123 @@ class BasicControlsViewController: UIViewController {
     
     private func setUpView(){
         title = "Basic View Controls"
+        setUpTextFieldRxExample()
+        setupTextViewRxExample()
+        setUpButtonTapRxExample()
+        setUpSegmentedControlRxExample()
+        setUpSliderRxExample()
+        setUpSwitchRxExample()
+        setUpStepperRxExample()
+        setUpResetBarButton()
+    }
+    
+    private func setUpTextFieldRxExample(){
         
+        textField.rx_text.asDriver()
+            .drive(textFieldLabel.rx_text)
+            .addDisposableTo(disposeBag)
+        
+    }
+    
+    private func setupTextViewRxExample(){
+        textView.rx_text.asDriver()
+            .skip(skip)
+            .driveNext{ [weak self] in
+                self?.textViewLabel.rx_text.onNext("Character count:\($0.characters.count)")
+            }
+            .addDisposableTo(disposeBag)
+    }
+    
+    private func setUpButtonTapRxExample(){
+    
+        button.rx_tap.asDriver()
+            .driveNext{[weak self] in
+            self?.buttonLabel.text! += "Tapped"
+            self?.view.endEditing(true)
+                UIView.animateWithDuration(0.3){self?.view.layoutIfNeeded()}
+        }.addDisposableTo(disposeBag)
+    }
+    
+    private func setUpSegmentedControlRxExample(){
+        
+        segmentedControl.rx_value.asDriver()
+            .skip(skip)
+            .driveNext{ [weak self] in
+                self?.segmentedControlLabel.text! = "Selected value \($0)"
+                UIView.animateWithDuration(0.3) { self?.view.layoutIfNeeded() }
+            }.addDisposableTo(disposeBag)
+    }
+    
+    private func setUpSliderRxExample(){
+    
+        slider.rx_value.asDriver()
+            .driveNext{ [weak self] in
+                self?.sliderLabel.text = "Slider value: \($0)"
+            }.addDisposableTo(disposeBag)
+        
+        slider.rx_value.asDriver()
+            .driveNext{ [weak self] in
+                self?.progressView.progress = $0
+        }.addDisposableTo(disposeBag)
+    }
+    
+    private func setUpSwitchRxExample(){
+    
+        `switch`.rx_value.asDriver()
+            .drive(activityIndicator.rx_animating)
+            .addDisposableTo(disposeBag)
+        
+        `switch`.rx_value.asDriver()
+            .map{ !$0}
+            .drive(activityIndicator.rx_hidden)
+            .addDisposableTo(disposeBag)
+        
+    }
+    
+    private func setUpStepperRxExample(){
+    
+        stepper.rx_value.asDriver()
+            .map{ String(Int($0))}
+            .driveNext{ [weak self] in
+                self?.stepperLabel.text! = $0
+            }.addDisposableTo(disposeBag)
+    
+    }
+    
+    private func setUpDatePickerRxExample(){
+    
+        datePicker.rx_date.asDriver()
+            .map{ [weak self] in
+                self?.dateFormatter.stringFromDate($0) ?? ""
+            }.driveNext{ [weak self] in
+                self?.datePickerLabel.text! = "Date : \($0)"
+            }.addDisposableTo(disposeBag)
+    }
+    
+    private func setUpResetBarButton(){
+        
+        resetBarButtonItem.rx_tap.asDriver()
+            .driveNext { [weak self] _ in
+                guard let `self` = self else { return }
+                self.textField.rx_text.onNext("")
+                self.textView.rx_text.onNext("Text view")
+                self.buttonLabel.rx_text.onNext("")
+                self.skip = 0
+                self.segmentedControl.rx_value.onNext(-1)
+                self.segmentedControlLabel.text = ""
+                self.slider.rx_value.onNext(0.5)
+                self.`switch`.rx_value.onNext(false)
+                self.stepper.rx_value.onNext(0.0)
+                self.datePicker.setDate(NSDate(), animated: true)
+                self.valueChangedControls.forEach { $0.sendActionsForControlEvents(.ValueChanged) }
+                self.view.endEditing(true)
+                UIView.animateWithDuration(0.3) { self.view.layoutIfNeeded() }
+            }.addDisposableTo(disposeBag)
+    
     }
     
     
     
     // MARK: - IBActions
-
+    
 }
