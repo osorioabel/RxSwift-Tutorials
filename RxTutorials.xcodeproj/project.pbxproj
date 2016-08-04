@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D1675201D52509C0072EC03 /* BasicControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */; };
+		0DBAFB021D53858900D49D70 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB001D53858900D49D70 /* Button.swift */; };
+		0DBAFB031D53858900D49D70 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB011D53858900D49D70 /* TextView.swift */; };
 		0DCFC4D21D5144E9001FD547 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */; };
 		0DCFC4D71D5144E9001FD547 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D51D5144E9001FD547 /* Main.storyboard */; };
 		0DCFC4D91D5144E9001FD547 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCFC4D81D5144E9001FD547 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicControlsViewController.swift; sourceTree = "<group>"; };
+		0DBAFB001D53858900D49D70 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		0DBAFB011D53858900D49D70 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		0DCFC4CE1D5144E7001FD547 /* RxTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DCFC4D61D5144E9001FD547 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +46,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D16751E1D52491F0072EC03 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0DCFC4D81D5144E9001FD547 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		0DBAFB041D53859000D49D70 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0DBAFB001D53858900D49D70 /* Button.swift */,
+				0DBAFB011D53858900D49D70 /* TextView.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
 		0DCFC4C51D5144E7001FD547 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0DCFC4D11D5144E9001FD547 /* AppDelegate.swift */,
+				0D16751E1D52491F0072EC03 /* Assets */,
 				0DCFC4E51D514853001FD547 /* View */,
 				0DCFC4E61D514858001FD547 /* Controllers */,
 				0DCFC4DD1D5144E9001FD547 /* Info.plist */,
@@ -72,8 +96,8 @@
 		0DCFC4E51D514853001FD547 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0DBAFB041D53859000D49D70 /* CustomViews */,
 				0DCFC4D51D5144E9001FD547 /* Main.storyboard */,
-				0DCFC4D81D5144E9001FD547 /* Assets.xcassets */,
 				0DCFC4DA1D5144E9001FD547 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -83,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0DCFC4E71D5148B9001FD547 /* TutorialsListViewController.swift */,
+				0D16751F1D52509C0072EC03 /* BasicControlsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -227,7 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DCFC4E81D5148B9001FD547 /* TutorialsListViewController.swift in Sources */,
+				0D1675201D52509C0072EC03 /* BasicControlsViewController.swift in Sources */,
 				0DCFC4D21D5144E9001FD547 /* AppDelegate.swift in Sources */,
+				0DBAFB021D53858900D49D70 /* Button.swift in Sources */,
+				0DBAFB031D53858900D49D70 /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

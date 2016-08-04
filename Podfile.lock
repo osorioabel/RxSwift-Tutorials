@@ -4,18 +4,23 @@ PODS:
     - ChameleonFramework/Default
   - RxCocoa (2.6.0):
     - RxSwift (~> 2.5)
+  - RxDataSources (0.9):
+    - RxCocoa (~> 2.2)
+    - RxSwift (~> 2.2)
   - RxSwift (2.6.0)
 
 DEPENDENCIES:
   - ChameleonFramework/Swift
-  - RxCocoa (~> 2.0)
-  - RxSwift (~> 2.0)
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
 
 SPEC CHECKSUMS:
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxDataSources: e169bba94a7be584df7c1e1487fa56edc8753ae6
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
 
-PODFILE CHECKSUM: 276de9eddacfc01f507c0e71f8edeb9174b30c57
+PODFILE CHECKSUM: eddc4457677bde2bc3f6299c3462d1de50e45772
 
 COCOAPODS: 1.0.0
