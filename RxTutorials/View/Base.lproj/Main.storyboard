@@ -94,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-fJ-2hm">
-                                <rect key="frame" x="20" y="72" width="560" height="686"/>
+                                <rect key="frame" x="20" y="72" width="560" height="674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jNa-ER-TK0">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="92"/>
@@ -214,21 +214,27 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-Y5-MbE">
-                                        <rect key="frame" x="0.0" y="434" width="560" height="216"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="478973443.75538999">
-                                            <!--2016-03-06 16:10:43 +0000-->
-                                        </date>
-                                    </datePicker>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s13-1L-xH3">
-                                        <rect key="frame" x="0.0" y="662" width="560" height="24"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="24" placeholder="YES" id="X5T-TQ-h1v"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-Pe-vTU">
+                                        <rect key="frame" x="0.0" y="434" width="560" height="240"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s13-1L-xH3">
+                                                <rect key="frame" x="130" y="0.0" width="300" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="39A-ZI-mxZ"/>
+                                                    <constraint firstAttribute="height" constant="24" placeholder="YES" id="X5T-TQ-h1v"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="vyM-Y5-MbE">
+                                                <rect key="frame" x="120" y="24" width="320" height="216"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="478973443.75538999">
+                                                    <!--2016-03-06 16:10:43 +0000-->
+                                                </date>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -269,8 +275,8 @@
                         <outletCollection property="valueChangedControls" destination="0jm-r4-wK5" collectionClass="NSMutableArray" id="RdV-aO-vEs"/>
                         <outletCollection property="valueChangedControls" destination="49E-J9-z1c" collectionClass="NSMutableArray" id="GzV-zN-kpq"/>
                         <outletCollection property="valueChangedControls" destination="np9-8Y-r04" collectionClass="NSMutableArray" id="Frt-fB-hJi"/>
-                        <outletCollection property="valueChangedControls" destination="vyM-Y5-MbE" collectionClass="NSMutableArray" id="5ZA-9l-OlQ"/>
                         <outletCollection property="valueChangedControls" destination="9dN-Y1-RW2" collectionClass="NSMutableArray" id="9wZ-Uy-WQb"/>
+                        <outletCollection property="valueChangedControls" destination="vyM-Y5-MbE" collectionClass="NSMutableArray" id="5ZA-9l-OlQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqx-Jb-RjU" sceneMemberID="firstResponder"/>
