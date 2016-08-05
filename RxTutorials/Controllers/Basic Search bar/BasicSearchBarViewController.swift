@@ -38,6 +38,7 @@ class BasicSearchBarViewController: UIViewController {
     
     private func setUpTableView(){
         
+        tableView.tableFooterView = UIView()
         
     }
     

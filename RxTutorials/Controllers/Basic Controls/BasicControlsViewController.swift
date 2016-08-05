@@ -52,6 +52,7 @@ class BasicControlsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        print("Date :")
     }
     
     // MARK: - Internal Helpers
@@ -65,6 +66,7 @@ class BasicControlsViewController: UIViewController {
         setUpSliderRxExample()
         setUpSwitchRxExample()
         setUpStepperRxExample()
+        setUpDatePickerRxExample()
         setUpResetBarButton()
     }
     
@@ -147,7 +149,7 @@ class BasicControlsViewController: UIViewController {
             .map{ [weak self] in
                 self?.dateFormatter.stringFromDate($0) ?? ""
             }.driveNext{ [weak self] in
-                self?.datePickerLabel.text! = "Date : \($0)"
+                self?.datePickerLabel.text = "Selected date: \($0)"
             }.addDisposableTo(disposeBag)
     }
     
