@@ -43,6 +43,281 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>0D7041851D58D0D80061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D7041861D58D1F80061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041861D58D1F80061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Repository.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041871D58D1F80061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041861D58D1F80061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D7041881D58D4890061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D7041891D58D4B20061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Networking Search bar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041891D58D4B20061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>NetworkingSearchBarViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70418A1D58D4B20061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041891D58D4B20061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D70418B1D58D6350061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D70418F1D58D9940061DDA0</string>
+				<string>0D70418C1D58D6530061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Services</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70418C1D58D6530061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RepositoriesNetworkService.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70418D1D58D6530061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D70418C1D58D6530061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D70418E1D58D9800061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D7041971D58E2F40061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>API</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70418F1D58D9940061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D7041901D58D9A60061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Networking</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041901D58D9A60061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Router.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041911D58D9A60061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041901D58D9A60061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D7041921D58DB250061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D7041931D58DB4B0061DDA0</string>
+				<string>0D7041951D58E14B0061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Error</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041931D58DB4B0061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Error.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041941D58DB4B0061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041931D58DB4B0061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D7041951D58E14B0061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>LocalizableString.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041961D58E14B0061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041951D58E14B0061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D7041971D58E2F40061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RepositoriesAPI.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D7041981D58E2F40061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D7041971D58E2F40061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D7041991D58F0980061DDA0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0D70419A1D58F0C40061DDA0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Elegant Networking Search bar</string>
+			<key>path</key>
+			<string>Elegant Networking Search bar</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70419A1D58F0C40061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>ElegantNetworkingSearchBarViewController.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70419B1D58F0C40061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D70419A1D58F0C40061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0D70419C1D58F4790061DDA0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RepositoriesViewModel.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D70419D1D58F4790061DDA0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0D70419C1D58F4790061DDA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>0DBAFB001D53858900D49D70</key>
 		<dict>
 			<key>fileEncoding</key>
@@ -121,6 +396,7 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>0D70419C1D58F4790061DDA0</string>
 				<string>0DBAFB081D539F3F00D49D70</string>
 			</array>
 			<key>isa</key>
@@ -292,8 +568,6 @@
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Basic Search bar</string>
 			<key>path</key>
 			<string>Basic Search bar</string>
 			<key>sourceTree</key>
@@ -402,18 +676,27 @@
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
+				<string>0D70418A1D58D4B20061DDA0</string>
 				<string>0DBAFB0D1D53A61900D49D70</string>
 				<string>0DBAFB1B1D53E27E00D49D70</string>
 				<string>0DCFC4E81D5148B9001FD547</string>
+				<string>0D7041871D58D1F80061DDA0</string>
 				<string>0DBAFB141D53C79300D49D70</string>
+				<string>0D70418D1D58D6530061DDA0</string>
 				<string>0DBAFB091D539F3F00D49D70</string>
+				<string>0D7041911D58D9A60061DDA0</string>
+				<string>0D7041941D58DB4B0061DDA0</string>
+				<string>0D70419D1D58F4790061DDA0</string>
 				<string>0DBAFB171D53D11C00D49D70</string>
 				<string>0DBAFB061D539E4400D49D70</string>
 				<string>0D1675201D52509C0072EC03</string>
+				<string>0D7041961D58E14B0061DDA0</string>
 				<string>0DBAFB0C1D53A61900D49D70</string>
+				<string>0D7041981D58E2F40061DDA0</string>
 				<string>0DCFC4D21D5144E9001FD547</string>
 				<string>0DBAFB021D53858900D49D70</string>
 				<string>0DBAFB031D53858900D49D70</string>
+				<string>0D70419B1D58F0C40061DDA0</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -506,8 +789,12 @@
 		<dict>
 			<key>children</key>
 			<array>
+				<string>0D70418E1D58D9800061DDA0</string>
 				<string>0D16751E1D52491F0072EC03</string>
 				<string>0DCFC4E61D514858001FD547</string>
+				<string>0D7041921D58DB250061DDA0</string>
+				<string>0D7041851D58D0D80061DDA0</string>
+				<string>0D70418B1D58D6350061DDA0</string>
 				<string>0DCFC4E51D514853001FD547</string>
 				<string>0DBAFB071D539ED700D49D70</string>
 				<string>0DCFC4D11D5144E9001FD547</string>
@@ -820,6 +1107,8 @@
 				<string>AppIcon</string>
 				<key>INFOPLIST_FILE</key>
 				<string>RxTutorials/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
@@ -842,6 +1131,8 @@
 				<string>AppIcon</string>
 				<key>INFOPLIST_FILE</key>
 				<string>RxTutorials/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<string>$(inherited) @executable_path/Frameworks</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
@@ -876,6 +1167,8 @@
 				<string>0DBAFB151D53D0EC00D49D70</string>
 				<string>0DBAFB0F1D53ADCA00D49D70</string>
 				<string>0DBAFB191D53E25600D49D70</string>
+				<string>0D7041991D58F0980061DDA0</string>
+				<string>0D7041881D58D4890061DDA0</string>
 				<string>0DBAFB101D53C70900D49D70</string>
 				<string>0DBAFB0E1D53ADBD00D49D70</string>
 				<string>0DCFC4E71D5148B9001FD547</string>

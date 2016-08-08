@@ -5,4 +5,7 @@ target 'RxTutorials' do
     pod 'RxCocoa'
     pod 'RxDataSources'
     pod 'ChameleonFramework/Swift'
+    pod 'ObjectMapper'
+    pod 'RxAlamofire'
+    pod 'AlamofireNetworkActivityIndicator'
 end
