@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (3.4.1)
+  - AlamofireNetworkActivityIndicator (1.0.1):
+    - Alamofire (~> 3.3)
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
@@ -17,6 +19,7 @@ PODS:
   - RxSwift (2.6.0)
 
 DEPENDENCIES:
+  - AlamofireNetworkActivityIndicator
   - ChameleonFramework/Swift
   - ObjectMapper
   - RxAlamofire
@@ -26,6 +29,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  AlamofireNetworkActivityIndicator: 49a6e39afb947136f7b1872bae2d684957c26697
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
@@ -33,6 +37,6 @@ SPEC CHECKSUMS:
   RxDataSources: e169bba94a7be584df7c1e1487fa56edc8753ae6
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
 
-PODFILE CHECKSUM: d61ccf0755426546b93da590b4736fb705fdd3f1
+PODFILE CHECKSUM: acdb8030ddfcf2a95ba2376b3f556d7e1aa82091
 
 COCOAPODS: 1.0.0

@@ -70,16 +70,12 @@ struct RepositoriesNetworkService {
                         }
                         observer.onNext(repos)
                         observer.onCompleted()
-                        
                     case .Failure(let error):
                         let apiError = ApiError(error: error, data:  response.data) ?? .defaultError
                         observer.onError(apiError)
                     }
             }
             return NopDisposable.instance
-            
         }
     }
-    
-    
 }

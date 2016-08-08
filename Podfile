@@ -7,4 +7,5 @@ target 'RxTutorials' do
     pod 'ChameleonFramework/Swift'
     pod 'ObjectMapper'
     pod 'RxAlamofire'
+    pod 'AlamofireNetworkActivityIndicator'
 end

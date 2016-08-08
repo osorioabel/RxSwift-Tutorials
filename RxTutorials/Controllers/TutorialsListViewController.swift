@@ -35,7 +35,7 @@ class TutorialsListViewController: UIViewController {
         case NetworkingSearchBar = "NetworkingSearchBarViewController"
         case ElegantNetworkingSearchBar = "ElegantNetworkingSearchBarViewController"
         
-        static let values :[DataSource]  = [.BasicControls,.TwoWayBinding,.SectionedTableViewReload,.SectionedTableViewAnimated,.BasicSearchBar,.NetworkingSearchBar]
+        static let values :[DataSource]  = [.BasicControls,.TwoWayBinding,.SectionedTableViewReload,.SectionedTableViewAnimated,.BasicSearchBar,.NetworkingSearchBar,.ElegantNetworkingSearchBar]
     }
     
     enum CellIdentifier:String {

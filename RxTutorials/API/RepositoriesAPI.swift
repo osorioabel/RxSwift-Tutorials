@@ -14,16 +14,10 @@ struct RepositoriesAPI {
     
     private static let disposeBag = DisposeBag()
     
-//    static func searchRepositories(query query: String) -> Observable<[Repository]> {
-//        
-//        RepositoriesNetworkService.searchRepositories(query: query)
-//            .subscribeNext { (repository) in
-//                return repository
-//            }
-//            .addDisposableTo(disposeBag)
-//        
-//        return Observable.just([])
-//    }
+    static func searchRepositories(query query: String) -> Observable<[Repository]> {
+        
+        return RepositoriesNetworkService.searchRepositories(query: query)
+    }
     
     
 }

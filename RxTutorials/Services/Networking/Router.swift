@@ -49,7 +49,7 @@ enum Router: URLRequestConvertible {
         //Repositories
         case .Repositories(let query):
             return Request(method: .GET,
-                           path: "/users/\(query)/repos",
+                           path: "users/\(query)/repos",
                            encoding: .JSON)
         }
     }
