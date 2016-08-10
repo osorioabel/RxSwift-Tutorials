@@ -8,4 +8,8 @@ target 'RxTutorials' do
     pod 'ObjectMapper'
     pod 'RxAlamofire'
     pod 'AlamofireNetworkActivityIndicator'
+    pod 'RxCoreData'
+    pod 'RealmSwift'
+    pod 'RxRealm'
+    pod 'BNRCoreDataStack'
 end
