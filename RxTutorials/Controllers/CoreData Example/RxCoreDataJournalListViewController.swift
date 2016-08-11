@@ -29,21 +29,25 @@ class RxCoreDataJournalListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        setUpBarButton()
     }
     
     // MARK: - Internal Helpers
     
     private func setUpView(){
         title = "RxCoreData"
-        CoreDataStack.constructSQLiteStack(withModelName: "JournalModel") { (result) in
+        CoreDataStack.constructSQLiteStack(withModelName: "RxTutorialsModel") { (result) in
             switch result {
             case .Success(let stack):
                 self.coreDataStack = stack
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.setUpTableView()
+                })
+                
             case .Failure(let error):
                 print(error)
             }
         }
-        setUpTableView()
     }
     
     func addJournalEntry() {
@@ -60,6 +64,14 @@ class RxCoreDataJournalListViewController: UIViewController {
         rxCoreDataJournalVC.journalEntry = journal
         rxCoreDataJournalVC.context = coreDataStack.newChildContext()
         self.navigationController?.pushViewController(rxCoreDataJournalVC, animated: true)
+    }
+    
+    func setUpBarButton(){
+        
+        addButton.rx_tap.asDriver()
+            .driveNext{[weak self] in
+                self?.addJournalEntry()
+            }.addDisposableTo(disposeBag)
     }
     
     private func setUpTableView(){
