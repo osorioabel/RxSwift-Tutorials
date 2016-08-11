@@ -12,6 +12,4 @@ target 'RxTutorials' do
     pod 'RealmSwift'
     pod 'RxRealm'
     pod 'BNRCoreDataStack'
-    
-    pod 'Moya-ObjectMapper/RxSwift'
 end

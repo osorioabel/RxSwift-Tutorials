@@ -12,9 +12,6 @@ import RxCocoa
 import ObjectMapper
 import RxAlamofire
 import Alamofire
-import Moya
-import Moya_ObjectMapper
-
 
 struct RepositoriesNetworkService {
     
@@ -81,16 +78,4 @@ struct RepositoriesNetworkService {
             return NopDisposable.instance
         }
     }
-    
-    // Moya Way
-    
-    static func searchRepositoriesWithMoya(query query:String) -> Observable<[Repository]>{
-        
-        return Observable.create{ (observer) -> Disposable in
-            
-            
-            return NopDisposable.instance
-        }
-    }
-    
 }

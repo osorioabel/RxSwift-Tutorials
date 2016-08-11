@@ -6,28 +6,12 @@ PODS:
   - ChameleonFramework/Default (2.1.0)
   - ChameleonFramework/Swift (2.1.0):
     - ChameleonFramework/Default
-  - Moya (7.0.0):
-    - Moya/Core (= 7.0.0)
-  - Moya-ObjectMapper/Core (1.3.1):
-    - Moya (~> 7.0)
-    - ObjectMapper (~> 1.3)
-  - Moya-ObjectMapper/RxSwift (1.3.1):
-    - Moya-ObjectMapper/Core
-    - Moya/RxSwift (~> 7.0)
-    - RxSwift (~> 2.0)
-  - Moya/Core (7.0.0):
-    - Alamofire (~> 3.0)
-    - Result (~> 2.0)
-  - Moya/RxSwift (7.0.0):
-    - Moya/Core
-    - RxSwift (~> 2.0)
   - ObjectMapper (1.3.0)
   - Realm (1.0.2):
     - Realm/Headers (= 1.0.2)
   - Realm/Headers (1.0.2)
   - RealmSwift (1.0.2):
     - Realm (= 1.0.2)
-  - Result (2.1.3)
   - RxAlamofire (2.5):
     - RxAlamofire/Core (= 2.5)
   - RxAlamofire/Core (2.5):
@@ -50,7 +34,6 @@ DEPENDENCIES:
   - AlamofireNetworkActivityIndicator
   - BNRCoreDataStack
   - ChameleonFramework/Swift
-  - Moya-ObjectMapper/RxSwift
   - ObjectMapper
   - RealmSwift
   - RxAlamofire
@@ -65,12 +48,9 @@ SPEC CHECKSUMS:
   AlamofireNetworkActivityIndicator: 49a6e39afb947136f7b1872bae2d684957c26697
   BNRCoreDataStack: 968926d1cef9d6eee5e7c18b57762aa270f9b96c
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
-  Moya: f004b82418fb8165ee1fc9f86190db4b3611fda9
-  Moya-ObjectMapper: 52f15abd982efc8ba2ce3fc49619555c926c14a1
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
   Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
   RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
-  Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
   RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
   RxCoreData: 366703b83ab1008a3108663f3d9e10f2080096b1
@@ -78,6 +58,6 @@ SPEC CHECKSUMS:
   RxRealm: e1620fd20f5dc0d14c10e92bcc6c2c70bfb03ebe
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
 
-PODFILE CHECKSUM: 496b1f599f48b5d9a7c4dda2bbd1267c0916947c
+PODFILE CHECKSUM: b6c97982755e0042d76dba8aeb9681008210a1fb
 
 COCOAPODS: 1.0.0
