@@ -29,10 +29,10 @@
 		0DBAFB141D53C79300D49D70 /* ReloadDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */; };
 		0DBAFB171D53D11C00D49D70 /* AnimatedDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB161D53D11C00D49D70 /* AnimatedDataSourceViewController.swift */; };
 		0DBAFB1B1D53E27E00D49D70 /* BasicSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBAFB1A1D53E27E00D49D70 /* BasicSearchBarViewController.swift */; };
+		0DC3BED71D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3BED51D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodeld */; };
 		0DCB6FF41D5BC1DA00471E0C /* RealmJournalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FF21D5BC1DA00471E0C /* RealmJournalListViewController.swift */; };
 		0DCB6FF51D5BC1DA00471E0C /* RealmJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FF31D5BC1DA00471E0C /* RealmJournalViewController.swift */; };
 		0DCB6FF71D5BC1EC00471E0C /* RealmJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FF61D5BC1EC00471E0C /* RealmJournal.swift */; };
-		0DCB6FF91D5BC26F00471E0C /* JournalModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FF81D5BC26F00471E0C /* JournalModel.xcdatamodel */; };
 		0DCB6FFD1D5BC29200471E0C /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FFA1D5BC29200471E0C /* Journal.swift */; };
 		0DCB6FFE1D5BC29200471E0C /* RxCoreDataJournalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FFB1D5BC29200471E0C /* RxCoreDataJournalListViewController.swift */; };
 		0DCB6FFF1D5BC29200471E0C /* RxCoreDataJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCB6FFC1D5BC29200471E0C /* RxCoreDataJournalViewController.swift */; };
@@ -67,10 +67,10 @@
 		0DBAFB131D53C79300D49D70 /* ReloadDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReloadDataSourceViewController.swift; sourceTree = "<group>"; };
 		0DBAFB161D53D11C00D49D70 /* AnimatedDataSourceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedDataSourceViewController.swift; sourceTree = "<group>"; };
 		0DBAFB1A1D53E27E00D49D70 /* BasicSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicSearchBarViewController.swift; sourceTree = "<group>"; };
+		0DC3BED61D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxTutorialsModel.xcdatamodel; sourceTree = "<group>"; };
 		0DCB6FF21D5BC1DA00471E0C /* RealmJournalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RealmJournalListViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0DCB6FF31D5BC1DA00471E0C /* RealmJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RealmJournalViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0DCB6FF61D5BC1EC00471E0C /* RealmJournal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RealmJournal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		0DCB6FF81D5BC26F00471E0C /* JournalModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = JournalModel.xcdatamodel; path = "/Users/osorioabel/Documents/Personal Projects/RxTutorials/RxTutorials/Models/JournalModel.xcdatamodel"; sourceTree = "<absolute>"; };
 		0DCB6FFA1D5BC29200471E0C /* Journal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Journal.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0DCB6FFB1D5BC29200471E0C /* RxCoreDataJournalListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RxCoreDataJournalListViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0DCB6FFC1D5BC29200471E0C /* RxCoreDataJournalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = RxCoreDataJournalViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -109,6 +109,7 @@
 		0D7041851D58D0D80061DDA0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0DC3BED51D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodeld */,
 				0D7041A31D59216D0061DDA0 /* Validators */,
 				0DCB6FFA1D5BC29200471E0C /* Journal.swift */,
 				0DCB6FF61D5BC1EC00471E0C /* RealmJournal.swift */,
@@ -464,7 +465,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DCB6FF91D5BC26F00471E0C /* JournalModel.xcdatamodel in Sources */,
 				0DCB6FF51D5BC1DA00471E0C /* RealmJournalViewController.swift in Sources */,
 				0D70418A1D58D4B20061DDA0 /* NetworkingSearchBarViewController.swift in Sources */,
 				0DBAFB0D1D53A61900D49D70 /* PresentedTextViewViewController.swift in Sources */,
@@ -478,6 +478,7 @@
 				0D7041911D58D9A60061DDA0 /* Router.swift in Sources */,
 				0D7041A01D591EB90061DDA0 /* FormValidationViewController.swift in Sources */,
 				0D7041941D58DB4B0061DDA0 /* Error.swift in Sources */,
+				0DC3BED71D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodeld in Sources */,
 				0D70419D1D58F4790061DDA0 /* RepositoriesViewModel.swift in Sources */,
 				0DBAFB171D53D11C00D49D70 /* AnimatedDataSourceViewController.swift in Sources */,
 				0DBAFB061D539E4400D49D70 /* TwoWayBindingViewController.swift in Sources */,
@@ -653,6 +654,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0DC3BED51D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0DC3BED61D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodel */,
+			);
+			currentVersion = 0DC3BED61D5CE9D400575DF4 /* RxTutorialsModel.xcdatamodel */;
+			path = RxTutorialsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0DCFC4C61D5144E7001FD547 /* Project object */;
 }

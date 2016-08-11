@@ -36,6 +36,7 @@ class FormValidationViewController: UIViewController {
     
     private func configureTextFields(){
     
+        passwordTextField.secureTextEntry = true
         let validEmail = usernameTextField.rx_text.map{ Validator.valid($0, inPattern: .email)}
         let validPassword = passwordTextField.rx_text.map{ Validator.valid($0, inPattern: .password)}
         let validForm = Observable.combineLatest(validEmail, validPassword){ (email,password) in
